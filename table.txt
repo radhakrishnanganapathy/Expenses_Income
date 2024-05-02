@@ -1,0 +1,46 @@
+create table expanses (
+    id int primary key,
+    e_type varchar(100),
+    date date,
+    catagories varchar(100),
+    sub_catagories varchar(100),
+    description varchar(250),
+    ammount int
+);
+
+create table business_purchase (
+    type varchar(100),
+    date date,
+    catagories varchar(100),
+    quantity int,
+    unit varchar(250),
+    customer varchar(250),
+    description varchar(250),
+    amount int
+);
+
+create table business_sales (
+    type varchar(100),
+    date date,
+    item varchar(100),
+    packet int,
+    value float,
+    client varchar(250),
+    hint varchar(250),
+    amount int
+);
+
+create table productions (
+    date date,
+    item varchar(100),
+    quantity float,
+    net_quantity float,
+    labour_count int,
+    salary int
+);
+
+create table stocks (
+    item varchar(250),
+    packets int,
+    kilo_gram float
+);
