@@ -2,13 +2,8 @@ import streamlit as st
 import psycopg2 as psc
 from datetime import datetime
 
-db_params = {
-     'dbname':'rkrish_db',
-     'host':'dpg-coiuro5jm4es739v1hvg-a.oregon-postgres.render.com',
-     'port':'5432',
-     'user':'radhakrishnan',
-     'password':'weJyKwjSj60UNzr4MXIEZ79FV7sf2ZHY'
-}
+
+db_params = " postgresql://radhakrishnan:weJyKwjSj60UNzr4MXIEZ79FV7sf2ZHY@dpg-coiuro5jm4es739v1hvg-a.oregon-postgres.render.com/rkrish_db"
 conn = psc.connect(**db_params)
 cursor = conn.cursor()
 
